@@ -89,8 +89,10 @@ function start($telegram,$update)
 				//$this->create_keyboard($telegram,$chat_id);
 			}
 							for ($i=1;$i<$count;$i++){
+									if ($csv[$i][16] =="-"){
 							$data .="\n";
 							$data .="Nome: ".$csv[$i][4]."\n";
+						 	//$data .="Fine validità: ".$csv[$i][16]."\n";
 							$data .="Indirizzo: ".$csv[$i][3]."\n".$csv[$i][6]." ".$csv[$i][8]."\n";
 							$lat1 =substr($csv[$i][19], 0, 2);
 							$lat2 =substr($csv[$i][19], 2, 6);
@@ -138,7 +140,7 @@ function start($telegram,$update)
 							}
 
 					//	echo $alert;
-
+}
 						$chunks = str_split($data, self::MAX_LENGTH);
 						foreach($chunks as $chunk) {
 				$forcehide=$telegram->buildForceReply(true);
@@ -147,6 +149,8 @@ function start($telegram,$update)
 							$telegram->sendMessage($content);
 
 						}
+						$content = array('chat_id' => $chat_id, 'text' => "Digita un Comune oppure invia la tua posizione tramite la graffetta (📎)");
+							$telegram->sendMessage($content);
 
 		//	}
 /*
@@ -217,9 +221,11 @@ if ($count >=50){
 sleep(3);
 }
 					for ($i=1;$i<$count;$i++){
+	if ($csv[$i][16] =="-"){
 					$data .="\n";
 					$data .="Nome: ".$csv[$i][4]."\n";
 					$data .="Indirizzo: ".$csv[$i][3]."\n".$csv[$i][6]." ".$csv[$i][8]."\n";
+			//	 	$data .="Fine validità: ".$csv[$i][16]."\n";
 					$lat1 =substr($csv[$i][19], 0, 2);
 					$lat2 =substr($csv[$i][19], 2, 6);
 					$lon1 =substr($csv[$i][20], 0, 2);
@@ -283,7 +289,7 @@ sleep(3);
 		    	}
 
 			//	echo $alert;
-
+}
 				$chunks = str_split($data, self::MAX_LENGTH);
 				foreach($chunks as $chunk) {
 		$forcehide=$telegram->buildForceReply(true);
@@ -292,6 +298,8 @@ sleep(3);
 					$telegram->sendMessage($content);
 
 				}
+				$content = array('chat_id' => $chat_id, 'text' => "Digita un Comune oppure invia la tua posizione tramite la graffetta (📎)");
+					$telegram->sendMessage($content);
 
 	}
 
