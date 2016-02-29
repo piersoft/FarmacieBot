@@ -1,0 +1,1319 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.540672,
+                    41.892045
+                ]
+            },
+            "properties": {
+                "id": "9438",
+                "nome": "BORGHESI  GUGLIELMO",
+                "distanza": "1.02 Km",
+                "cap": "176",
+                "indirizzo": "Largo Preneste  22",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.540672,
+                    41.892045
+                ]
+            },
+            "properties": {
+                "id": "9438",
+                "nome": "BORGHESI  GUGLIELMO",
+                "distanza": "1.02 Km",
+                "cap": "176",
+                "indirizzo": "Largo Preneste  22",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.54343,
+                    41.88431
+                ]
+            },
+            "properties": {
+                "id": "9487",
+                "nome": "SILVESTRINI LUCA",
+                "distanza": "1.03 Km",
+                "cap": "177",
+                "indirizzo": "Via Acqua Bullicante  72",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.540364,
+                    41.887034
+                ]
+            },
+            "properties": {
+                "id": "9500",
+                "nome": "D'ERAMO MARCO NICOLO'",
+                "distanza": "1.10 Km",
+                "cap": "176",
+                "indirizzo": "Piazza Roberto Malatesta  38",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.540364,
+                    41.887034
+                ]
+            },
+            "properties": {
+                "id": "9500",
+                "nome": "D'ERAMO MARCO NICOLO'",
+                "distanza": "1.10 Km",
+                "cap": "176",
+                "indirizzo": "Piazza Roberto Malatesta  38",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.540364,
+                    41.887034
+                ]
+            },
+            "properties": {
+                "id": "9500",
+                "nome": "D'ERAMO MARCO NICOLO'",
+                "distanza": "1.10 Km",
+                "cap": "176",
+                "indirizzo": "Via Guglielmo degli Ubertini  3",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.562973,
+                    41.883381
+                ]
+            },
+            "properties": {
+                "id": "9312",
+                "nome": "PATARINO DEL DOTT.  FRANCESCO PATARINO SAS",
+                "distanza": "1.15 Km",
+                "cap": "172",
+                "indirizzo": "Via Tor de Schiavi  147-b\/c",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.562973,
+                    41.883381
+                ]
+            },
+            "properties": {
+                "id": "9312",
+                "nome": "PATARINO FRANCESCO",
+                "distanza": "1.15 Km",
+                "cap": "172",
+                "indirizzo": "Via Tor de Schiavi  147-b\/c",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.539049,
+                    41.88751
+                ]
+            },
+            "properties": {
+                "id": "9427",
+                "nome": "EREDI DI MERCURI SECONDINA SDF",
+                "distanza": "1.18 Km",
+                "cap": "176",
+                "indirizzo": "Via Roberto Malatesta  35",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.539049,
+                    41.88751
+                ]
+            },
+            "properties": {
+                "id": "9427",
+                "nome": "MERCURI SECONDINA",
+                "distanza": "1.18 Km",
+                "cap": "176",
+                "indirizzo": "Via Roberto Malatesta  35",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.539049,
+                    41.88751
+                ]
+            },
+            "properties": {
+                "id": "9427",
+                "nome": "TUPPUTI PAOLO",
+                "distanza": "1.18 Km",
+                "cap": "176",
+                "indirizzo": "Via Roberto Malatesta  35",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.569625,
+                    41.889348
+                ]
+            },
+            "properties": {
+                "id": "9374",
+                "nome": "DEI GELSI F.LLI POLI SANDRI DI MARCO GUIDO POLI SANDRI",
+                "distanza": "1.40 Km",
+                "cap": "171",
+                "indirizzo": "Via dei Gelsi  15 A",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.569625,
+                    41.889348
+                ]
+            },
+            "properties": {
+                "id": "9374",
+                "nome": "DEI GELSI-EREDI POLI SANDRI ELIO",
+                "distanza": "1.40 Km",
+                "cap": "171",
+                "indirizzo": "Via dei Gelsi  15 A",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.554336,
+                    41.877239
+                ]
+            },
+            "properties": {
+                "id": "9544",
+                "nome": "RONCHI SNC",
+                "distanza": "1.47 Km",
+                "cap": "177",
+                "indirizzo": "Piazza Ronchi  2",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.566681,
+                    41.882039
+                ]
+            },
+            "properties": {
+                "id": "9277",
+                "nome": "SORBINI DELLA DR.SSA ANTONELLA VACCARO",
+                "distanza": "1.48 Km",
+                "cap": "172",
+                "indirizzo": "Piazza dei Gerani  2",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.566681,
+                    41.882039
+                ]
+            },
+            "properties": {
+                "id": "9277",
+                "nome": "SORBINI SAS DELLA DR.SSA ANTONELLA VACCARO & C.",
+                "distanza": "1.48 Km",
+                "cap": "172",
+                "indirizzo": "Piazza dei Gerani  2",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.566681,
+                    41.882039
+                ]
+            },
+            "properties": {
+                "id": "9277",
+                "nome": "SORBINI DEL DR. GUIDO SORBINI & C. SNC",
+                "distanza": "1.48 Km",
+                "cap": "172",
+                "indirizzo": "Via dei Castani  168",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.566681,
+                    41.882039
+                ]
+            },
+            "properties": {
+                "id": "9277",
+                "nome": "SORBINI GUIDO",
+                "distanza": "1.48 Km",
+                "cap": "172",
+                "indirizzo": "Via dei Castani  168",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.566681,
+                    41.882039
+                ]
+            },
+            "properties": {
+                "id": "9306",
+                "nome": "EREDI SANTORI ORNELLA",
+                "distanza": "1.48 Km",
+                "cap": "172",
+                "indirizzo": "Via dei Castani  110",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.566681,
+                    41.882039
+                ]
+            },
+            "properties": {
+                "id": "9306",
+                "nome": "SANTORI ORNELLA DI MOSCATELLI ROSSELLA",
+                "distanza": "1.48 Km",
+                "cap": "172",
+                "indirizzo": "Via dei Castani  110",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.566681,
+                    41.882039
+                ]
+            },
+            "properties": {
+                "id": "9309",
+                "nome": "ROTA GIOVANNI",
+                "distanza": "1.48 Km",
+                "cap": "171",
+                "indirizzo": "Via dei Castani  310\/312",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.534509,
+                    41.890478
+                ]
+            },
+            "properties": {
+                "id": "9474",
+                "nome": "FARMACIE SANASI GIUSSANO SAS DI SANASI ARMANDO CARMELO ANTONIO",
+                "distanza": "1.51 Km",
+                "cap": "176",
+                "indirizzo": "Via A. da Giussano  40",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.534509,
+                    41.890478
+                ]
+            },
+            "properties": {
+                "id": "9474",
+                "nome": "SANASI RAFFAELE",
+                "distanza": "1.51 Km",
+                "cap": "176",
+                "indirizzo": "Via A. da Giussano  40",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.534509,
+                    41.890478
+                ]
+            },
+            "properties": {
+                "id": "9474",
+                "nome": "SANASI SAS DI SANASI RAFFAELE",
+                "distanza": "1.51 Km",
+                "cap": "176",
+                "indirizzo": "Via A. da Giussano  40",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.56664,
+                    41.881097
+                ]
+            },
+            "properties": {
+                "id": "9291",
+                "nome": "FRATELLI MARCHETTI SNC",
+                "distanza": "1.55 Km",
+                "cap": "172",
+                "indirizzo": "Piazza dei Mirti  1",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.567565,
+                    41.881075
+                ]
+            },
+            "properties": {
+                "id": "9295",
+                "nome": "EREDI LOLLI GHETTI SDF",
+                "distanza": "1.61 Km",
+                "cap": "172",
+                "indirizzo": "Via dei Platani  142",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.567565,
+                    41.881075
+                ]
+            },
+            "properties": {
+                "id": "9295",
+                "nome": "LOLLI GHETTI MARCO",
+                "distanza": "1.61 Km",
+                "cap": "172",
+                "indirizzo": "Via dei Platani  142",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.567565,
+                    41.881075
+                ]
+            },
+            "properties": {
+                "id": "9295",
+                "nome": "LOLLI GHETTI MARCO",
+                "distanza": "1.61 Km",
+                "cap": "172",
+                "indirizzo": "Via dei Platani  142",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.535955,
+                    41.897898
+                ]
+            },
+            "properties": {
+                "id": "9317",
+                "nome": "CASALBERTONE DELLA DR.SSA FILARDI GEMMA",
+                "distanza": "1.62 Km",
+                "cap": "159",
+                "indirizzo": "Via A. Baldissera  1\/c",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.535955,
+                    41.897898
+                ]
+            },
+            "properties": {
+                "id": "9317",
+                "nome": "DI STEFANO VITA",
+                "distanza": "1.62 Km",
+                "cap": "159",
+                "indirizzo": "Via A. Baldissera  1\/c",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.535955,
+                    41.897898
+                ]
+            },
+            "properties": {
+                "id": "9317",
+                "nome": "DI STEFANO VITA",
+                "distanza": "1.62 Km",
+                "cap": "159",
+                "indirizzo": "Via A. Baldissera  1\/c",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.566984,
+                    41.900536
+                ]
+            },
+            "properties": {
+                "id": "9477",
+                "nome": "BASCHIERI IVO",
+                "distanza": "1.63 Km",
+                "cap": "177",
+                "indirizzo": "Via Collatina  29",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.566984,
+                    41.900536
+                ]
+            },
+            "properties": {
+                "id": "9477",
+                "nome": "COLLATINA NUOVA SNC DI DANIELA CRESCENZI-LUCETTA FRANCIONE",
+                "distanza": "1.63 Km",
+                "cap": "177",
+                "indirizzo": "Via Collatina  29\/A",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.566984,
+                    41.900536
+                ]
+            },
+            "properties": {
+                "id": "9477",
+                "nome": "COLLATINA NUOVA- DI DANIELA CRESCENZI-LUCETTA FRANCIONI-WILLIAM SELVI",
+                "distanza": "1.63 Km",
+                "cap": "177",
+                "indirizzo": "Via Collatina  29\/A",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.566984,
+                    41.900536
+                ]
+            },
+            "properties": {
+                "id": "9477",
+                "nome": "COLLATINA NUOVA- DI DANIELA CRESCENZI-LUCETTA FRANCIONI-WILLIAM SELVI",
+                "distanza": "1.63 Km",
+                "cap": "177",
+                "indirizzo": "Via Collatina  29\/A",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.566984,
+                    41.900536
+                ]
+            },
+            "properties": {
+                "id": "9489",
+                "nome": "ABUDI LINDA",
+                "distanza": "1.63 Km",
+                "cap": "177",
+                "indirizzo": "Via Collatina  112",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.566984,
+                    41.900536
+                ]
+            },
+            "properties": {
+                "id": "9489",
+                "nome": "ABUDI LINDA",
+                "distanza": "1.63 Km",
+                "cap": "177",
+                "indirizzo": "Via Collatina  112",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.540362,
+                    41.878135
+                ]
+            },
+            "properties": {
+                "id": "9514",
+                "nome": "S. GIUSEPPE DR.SSA ANNA RASULO",
+                "distanza": "1.71 Km",
+                "cap": "176",
+                "indirizzo": "Via Ciro da Urbino  37",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.53151,
+                    41.890629
+                ]
+            },
+            "properties": {
+                "id": "9454",
+                "nome": "CONTI MAURIZIO",
+                "distanza": "1.76 Km",
+                "cap": "176",
+                "indirizzo": "Via Ettore Giovenale  10\/12",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.53151,
+                    41.890629
+                ]
+            },
+            "properties": {
+                "id": "9454",
+                "nome": "CONTI MAURIZIO & GIANMARCO SNC",
+                "distanza": "1.76 Km",
+                "cap": "176",
+                "indirizzo": "Via Ettore Giovenale  10\/12",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.53151,
+                    41.890629
+                ]
+            },
+            "properties": {
+                "id": "9454",
+                "nome": "CONTI MAURIZIO & GIANMARCO SNC",
+                "distanza": "1.76 Km",
+                "cap": "176",
+                "indirizzo": "Via Prenestina  144\/A",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.534001,
+                    41.898337
+                ]
+            },
+            "properties": {
+                "id": "9501",
+                "nome": "LA DONNA ANGELA",
+                "distanza": "1.79 Km",
+                "cap": "159",
+                "indirizzo": "Via Morozzo della Rocca  34",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.534001,
+                    41.898337
+                ]
+            },
+            "properties": {
+                "id": "9501",
+                "nome": "LA DONNA ANGELA",
+                "distanza": "1.79 Km",
+                "cap": "159",
+                "indirizzo": "Via Morozzo della Rocca  34",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.534001,
+                    41.898337
+                ]
+            },
+            "properties": {
+                "id": "9501",
+                "nome": "LA DONNA ANGELA",
+                "distanza": "1.79 Km",
+                "cap": "159",
+                "indirizzo": "Via Morozzo della Rocca  34",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.54471,
+                    41.875004
+                ]
+            },
+            "properties": {
+                "id": "9471",
+                "nome": "TEDONE PAOLA",
+                "distanza": "1.84 Km",
+                "cap": "177",
+                "indirizzo": "Via R. Pettazzoni  24",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.54471,
+                    41.875004
+                ]
+            },
+            "properties": {
+                "id": "9471",
+                "nome": "perri",
+                "distanza": "1.84 Km",
+                "cap": "177",
+                "indirizzo": "Via R. Pettazzoni  24",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.551247,
+                    41.907552
+                ]
+            },
+            "properties": {
+                "id": "9293",
+                "nome": "FARGION VENTURA",
+                "distanza": "1.91 Km",
+                "cap": "159",
+                "indirizzo": "Via Diego Angeli  176",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.551608,
+                    41.907877
+                ]
+            },
+            "properties": {
+                "id": "9349",
+                "nome": "PROCACCINI ALFREDO",
+                "distanza": "1.94 Km",
+                "cap": "159",
+                "indirizzo": "Via Giuseppe Donati  62",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.564709,
+                    41.875291
+                ]
+            },
+            "properties": {
+                "id": "9299",
+                "nome": "VERSACE GAETANO",
+                "distanza": "1.95 Km",
+                "cap": "172",
+                "indirizzo": "Via Tor De' Schiavi  188",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.564709,
+                    41.875291
+                ]
+            },
+            "properties": {
+                "id": "9381",
+                "nome": "ELETTI BIANCHI ROBERTA",
+                "distanza": "1.95 Km",
+                "cap": "172",
+                "indirizzo": "Via Tor de' Schiavi  39-39a",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.564709,
+                    41.875291
+                ]
+            },
+            "properties": {
+                "id": "9381",
+                "nome": "ELETTI SNC DI ELETTI BIANCHI FERNANDO ED ELETTI BIANCHI ROBERTA",
+                "distanza": "1.95 Km",
+                "cap": "172",
+                "indirizzo": "Via Tor de' Schiavi  39-39a",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.564709,
+                    41.875291
+                ]
+            },
+            "properties": {
+                "id": "9414",
+                "nome": "EREDI MARINI DOTT. BERARDINO",
+                "distanza": "1.95 Km",
+                "cap": "171",
+                "indirizzo": "Via Tor de Schiavi  281",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.564709,
+                    41.875291
+                ]
+            },
+            "properties": {
+                "id": "9414",
+                "nome": "MARINI BERARDINO",
+                "distanza": "1.95 Km",
+                "cap": "171",
+                "indirizzo": "Via Tor de Schiavi  281",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.564709,
+                    41.875291
+                ]
+            },
+            "properties": {
+                "id": "9414",
+                "nome": "MARINI DOTT. LUCA",
+                "distanza": "1.95 Km",
+                "cap": "171",
+                "indirizzo": "Via Tor de Schiavi  281",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.551393,
+                    41.889525
+                ]
+            },
+            "properties": {
+                "id": "9510",
+                "nome": "ANNETTA MARIA GIUSEPPINA",
+                "distanza": "153 mt",
+                "cap": "177",
+                "indirizzo": "V.le Partenope  96",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.551393,
+                    41.889525
+                ]
+            },
+            "properties": {
+                "id": "9510",
+                "nome": "ANNETTA MARIA GIUSEPPINA",
+                "distanza": "153 mt",
+                "cap": "177",
+                "indirizzo": "Viale Partenope  96",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.550971,
+                    41.892937
+                ]
+            },
+            "properties": {
+                "id": "9505",
+                "nome": "CONTI MARINA",
+                "distanza": "318 mt",
+                "cap": "177",
+                "indirizzo": "Largo Irpinia  40",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.550971,
+                    41.892937
+                ]
+            },
+            "properties": {
+                "id": "9505",
+                "nome": "CONTI MARINA",
+                "distanza": "318 mt",
+                "cap": "177",
+                "indirizzo": "Largo Irpinia  40",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.556641,
+                    41.891319
+                ]
+            },
+            "properties": {
+                "id": "9534",
+                "nome": "CASTELFORTE SNC",
+                "distanza": "334 mt",
+                "cap": "171",
+                "indirizzo": "-",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.556641,
+                    41.891319
+                ]
+            },
+            "properties": {
+                "id": "9534",
+                "nome": "CASTELFORTE SNC",
+                "distanza": "334 mt",
+                "cap": "171",
+                "indirizzo": "Via Castelforte  29",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.556641,
+                    41.891319
+                ]
+            },
+            "properties": {
+                "id": "9534",
+                "nome": "CASTELFORTE SNC",
+                "distanza": "334 mt",
+                "cap": "171",
+                "indirizzo": "Via Castelforte  29",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.556641,
+                    41.891319
+                ]
+            },
+            "properties": {
+                "id": "9534",
+                "nome": "CASTELFORTE SNC DI GIANSERRA A. & MEDIATI M.G.",
+                "distanza": "334 mt",
+                "cap": "171",
+                "indirizzo": "Via Castelforte  29",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.556641,
+                    41.891319
+                ]
+            },
+            "properties": {
+                "id": "9534",
+                "nome": "MEDIATI DR.SSA MARIA GRAZIA",
+                "distanza": "334 mt",
+                "cap": "171",
+                "indirizzo": "Via Castelforte  29",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.557625,
+                    41.894394
+                ]
+            },
+            "properties": {
+                "id": "9558",
+                "nome": "SABAUDIA DEL DR. MARCO MORI",
+                "distanza": "596 mt",
+                "cap": "171",
+                "indirizzo": "Via Sabaudia  71",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.557625,
+                    41.894394
+                ]
+            },
+            "properties": {
+                "id": "9558",
+                "nome": "SABAUDIA SNC DI VALERIA E MARCO MORI",
+                "distanza": "596 mt",
+                "cap": "171",
+                "indirizzo": "Via Sabaudia  71",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.542058,
+                    41.890284
+                ]
+            },
+            "properties": {
+                "id": "9552",
+                "nome": "ANACAPRI DI LUISELLA FESTINANTE",
+                "distanza": "888 mt",
+                "cap": "177",
+                "indirizzo": "Via dell'Acqua Bullicante  202",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.542058,
+                    41.890284
+                ]
+            },
+            "properties": {
+                "id": "9552",
+                "nome": "ANACAPRI DI LUISELLA FESTINANTE",
+                "distanza": "888 mt",
+                "cap": "177",
+                "indirizzo": "Via dell'Acqua Bullicante  202",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.542058,
+                    41.890284
+                ]
+            },
+            "properties": {
+                "id": "9552",
+                "nome": "ANACAPRI DI LUISELLA FESTINANTE",
+                "distanza": "888 mt",
+                "cap": "177",
+                "indirizzo": "Via dell'Acqua Bullicante  202",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.542058,
+                    41.890284
+                ]
+            },
+            "properties": {
+                "id": "9552",
+                "nome": "ANACAPRI SAS DI LUISELLA FESTINANTE",
+                "distanza": "888 mt",
+                "cap": "177",
+                "indirizzo": "Via dell'Acqua Bullicante  202",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.542058,
+                    41.890284
+                ]
+            },
+            "properties": {
+                "id": "9552",
+                "nome": "ANACAPRI SNC DI LUISELLA FESTINANTE E ROBERTO MONGARDINI",
+                "distanza": "888 mt",
+                "cap": "177",
+                "indirizzo": "Via dell'Acqua Bullicante  202",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.542058,
+                    41.890284
+                ]
+            },
+            "properties": {
+                "id": "9552",
+                "nome": "SALTARELLI ARMANDO SAS",
+                "distanza": "888 mt",
+                "cap": "177",
+                "indirizzo": "Via dell'Acqua Bullicante  202",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.542885,
+                    41.885487
+                ]
+            },
+            "properties": {
+                "id": "9484",
+                "nome": "CRISTINI GIULIO",
+                "distanza": "986 mt",
+                "cap": "176",
+                "indirizzo": "-",
+                "comune": "ROMA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.542885,
+                    41.885487
+                ]
+            },
+            "properties": {
+                "id": "9484",
+                "nome": "FENICE SNC DR.SSE ARICO' CARMELINA E MIRABILE SERENELLA",
+                "distanza": "986 mt",
+                "cap": "176",
+                "indirizzo": "Via B. Perestrello  26\/27",
+                "comune": "ROMA"
+            }
+        }
+    ]
+}

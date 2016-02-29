@@ -39,6 +39,7 @@ function start($telegram,$update)
 {
 	date_default_timezone_set('Europe/Rome');
 	$today = date("Y-m-d H:i:s");
+	if (strpos($text,'@FarmacieBot') !== false) $text=str_replace("@FarmacieBot ","",$text);
 
 	if ($text == "/start") {
 		$reply = "Benvenuto. Per ricercare una farmacia, clicca sulla graffetta (📎) e poi 'posizione'. Verrà interrogato il DataBase openData del Ministero della Sanità utilizzabile con licenza iodl2.0 e verranno elencate le farmacie del comune scelto. In qualsiasi momento scrivendo /start ti ripeterò questo messaggio di benvenuto.\nQuesto bot, non ufficiale, è stato realizzato da @piersoft e il codice sorgente per libero riuso si trova su https://github.com/piersoft/FarmacieBot. La propria posizione viene ricercata grazie al geocoder di openStreetMap con Lic. odbl.";
@@ -59,7 +60,7 @@ function start($telegram,$update)
 //elseif($text !=null)
 
 		else{
-			$location="Sto cercando le Famacie del Comune di: ".$text;
+			$location="Sto cercando le Farmacie del Comune di: ".$text;
 			$content = array('chat_id' => $chat_id, 'text' => $location,'disable_web_page_preview'=>true);
 			$telegram->sendMessage($content);
 			sleep (1);
@@ -199,7 +200,7 @@ function location_manager($telegram,$user_id,$chat_id,$location)
 			}else 	$comune .=$parsed_json->{'address'}->{'city'};
 
 			if ($parsed_json->{'address'}->{'village'}) $comune .=$parsed_json->{'address'}->{'village'};
-			$location="Sto cercando le Famacie del Comune di: ".$comune." tramite le coordinate che hai inviato: ".$lat.",".$lon;
+			$location="Sto cercando le Farmacie del Comune di: ".$comune." tramite le coordinate che hai inviato: ".$lat.",".$lon;
 			$content = array('chat_id' => $chat_id, 'text' => $location,'disable_web_page_preview'=>true);
 			$telegram->sendMessage($content);
 	//	echo "comune: ".$comune."\n</br>";
@@ -298,6 +299,9 @@ sleep(3);
 					$telegram->sendMessage($content);
 
 				}
+$reply="Puoi visualizzare le farmacie attorno a te visitando: http://www.piersoft.it/FarmacieBot/mappa/locator.php?lat=".$lat."&lon=".$lon."&r=2";
+				$content = array('chat_id' => $chat_id, 'text' => $reply,'disable_web_page_preview'=>true);
+					$telegram->sendMessage($content);
 				$content = array('chat_id' => $chat_id, 'text' => "Digita un Comune oppure invia la tua posizione tramite la graffetta (📎)");
 					$telegram->sendMessage($content);
 
