@@ -42,7 +42,7 @@ function start($telegram,$update)
 	if (strpos($text,'@FarmacieBot') !== false) $text=str_replace("@FarmacieBot ","",$text);
 
 	if ($text == "/start") {
-		$reply = "Benvenuto. Per ricercare una farmacia, clicca sulla graffetta (📎) e poi 'posizione'. Verrà interrogato il DataBase openData del Ministero della Sanità utilizzabile con licenza iodl2.0 e verranno elencate le farmacie del comune scelto. In qualsiasi momento scrivendo /start ti ripeterò questo messaggio di benvenuto.\nQuesto bot, non ufficiale, è stato realizzato da @piersoft e il codice sorgente per libero riuso si trova su https://github.com/piersoft/FarmacieBot. La propria posizione viene ricercata grazie al geocoder di openStreetMap con Lic. odbl.";
+		$reply = "Benvenuto. Per ricercare una farmacia, clicca sulla graffetta (📎) e poi 'posizione' oppure scrivi il nome del Comune di interesse. Verrà interrogato il DataBase openData del Ministero della Sanità utilizzabile con licenza iodl2.0 e verranno elencate le farmacie del comune scelto. In qualsiasi momento scrivendo /start ti ripeterò questo messaggio di benvenuto.\nQuesto bot è stato realizzato da @piersoft e il codice sorgente per libero riuso si trova su https://github.com/piersoft/FarmacieBot. La propria posizione viene ricercata grazie al geocoder Nominatim di openStreetMap con Lic. odbl. L'autore non è responsabile dei dati del Ministero, se errati  anche come informazione geografica.";
 		$content = array('chat_id' => $chat_id, 'text' => $reply,'disable_web_page_preview'=>true);
 		$telegram->sendMessage($content);
 		$log=$today. ";new chat started;" .$chat_id. "\n";
@@ -63,8 +63,9 @@ function start($telegram,$update)
 			$location="Sto cercando le Farmacie del Comune di: ".$text;
 			$content = array('chat_id' => $chat_id, 'text' => $location,'disable_web_page_preview'=>true);
 			$telegram->sendMessage($content);
-			sleep (1);
-
+			$mappa=[];
+			$c=0;
+$longUrlG="";
 						$url="http://opendatasalute.cloudapp.net/DataBrowser/DownloadCsv?container=datacatalog&entitySet=Farmacie&filter=descrizionecomune%20eq%20%27".strtoupper($text)."%27";
 				//echo $url;
 						$csv = array_map('str_getcsv', file($url));
@@ -75,12 +76,7 @@ function start($telegram,$update)
 								 $count = $count+1;
 							}
 							echo $count;
-			if ($count >=50){
-			$location="Sono più di 30\nGli short links goo.gl vengono disabilitati per permettere una veloce risposta:";
-			$content = array('chat_id' => $chat_id, 'text' => $location,'disable_web_page_preview'=>true);
-			$telegram->sendMessage($content);
-			sleep(2);
-			}
+
 			if ($csv[1][1] ==""){
 				$reply = "Hai selezionato un comune non riconosciuto. Ricordati che puoi sempre inviare la tua posizione cliccando sulla graffetta (📎) ";
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
@@ -90,7 +86,7 @@ function start($telegram,$update)
 				//$this->create_keyboard($telegram,$chat_id);
 			}
 							for ($i=1;$i<$count;$i++){
-									if ($csv[$i][16] =="-"){
+							if ($csv[$i][16] =="-"){
 							$data .="\n";
 							$data .="Nome: ".$csv[$i][4]."\n";
 						 	//$data .="Fine validità: ".$csv[$i][16]."\n";
@@ -103,8 +99,11 @@ function start($telegram,$update)
 						//	$data ="Lon".$lon1.".".$lon2;
 							$latitudine =$lat1.".".$lat2;
 							$longitudine =$lon1.".".$lon2;
-
-
+							$longUrlG = "http://www.openstreetmap.org/?mlat=".$latitudine."&mlon=".$longitudine."#map=19/".$latitudine."/".$longitudine;
+					//		$mappa=$longUrlG;
+							array_push($mappa,$longUrlG);
+						//	$c++;
+/*
 							if ($csv[$i][19] !=NULL AND $count<31){
 
 							$longUrl = "http://www.openstreetmap.org/?mlat=".$latitudine."&mlon=".$longitudine."#map=19/".$latitudine."/".$longitudine;
@@ -133,35 +132,39 @@ function start($telegram,$update)
 							$shortLink = get_object_vars($json);
 							$data .="Mappa: ".$shortLink['id']."\n";
 							}
-							if ($csv[$i][19] !=NULL AND $count>=31){
-
-								$data .= "Guardalo sulla mappa:\nhttp://www.openstreetmap.org/?mlat=".$latitudine."&mlon=".$longitudine."#map=19/".$latitudine."/".$longitudine."\n\n";
+							*/
+							if ($csv[$i][19] !=NULL){
+							//	$c++;
+							//$data .= "Guardalo sulla mappa:\nhttp://www.openstreetmap.org/?mlat=".$latitudine."&mlon=".$longitudine."#map=19/".$latitudine."/".$longitudine."\n\n";
+							$mappa[$i]="http://www.openstreetmap.org/?mlat=".$latitudine."&mlon=".$longitudine."#map=19/".$latitudine."/".$longitudine;
 
 							}
+							//$forcehide=$telegram->buildForceReply(true);
+							$content1 = array('chat_id' => $chat_id, 'text' => $data,'disable_web_page_preview'=>true);
+							$telegram->sendMessage($content1);
+							$data="";
+							$option = array( array( $telegram->buildInlineKeyboardButton("Mappa", $url=$mappa[$i])));
+							$keyb = $telegram->buildInlineKeyBoard($option);
+							$content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "Vai alla");
+							$telegram->sendMessage($content);
+
+
 							}
 
 					//	echo $alert;
 }
-						$chunks = str_split($data, self::MAX_LENGTH);
-						foreach($chunks as $chunk) {
-				$forcehide=$telegram->buildForceReply(true);
-					$content = array('chat_id' => $chat_id, 'text' => $chunk,'disable_web_page_preview'=>true);
 
-							$telegram->sendMessage($content);
+						$chunks = str_split($data, self::MAX_LENGTH);
+
+						foreach($chunks as $chunk) {
+
 
 						}
-						$content = array('chat_id' => $chat_id, 'text' => "Digita un Comune oppure invia la tua posizione tramite la graffetta (📎)");
+
+							$content = array('chat_id' => $chat_id, 'text' => "Digita un Comune oppure invia la tua posizione tramite la graffetta (📎). Per info /start");
 							$telegram->sendMessage($content);
 
 		//	}
-/*
-			 $reply = "Hai selezionato un comando non previsto. Ricordati che devi prima inviare la tua posizione cliccando sulla graffetta (📎) ";
-			 $content = array('chat_id' => $chat_id, 'text' => $reply);
-			 $telegram->sendMessage($content);
-
-			 $log=$today. ";wrong command sent;" .$chat_id. "\n";
-			 //$this->create_keyboard($telegram,$chat_id);
-*/
 
 	}
 
@@ -200,7 +203,7 @@ function location_manager($telegram,$user_id,$chat_id,$location)
 			}else 	$comune .=$parsed_json->{'address'}->{'city'};
 
 			if ($parsed_json->{'address'}->{'village'}) $comune .=$parsed_json->{'address'}->{'village'};
-			$location="Sto cercando le Farmacie del Comune di: ".$comune." tramite le coordinate che hai inviato: ".$lat.",".$lon;
+			$location="Sto cercando le Farmacie del Comune di: ".$comune;//." tramite le coordinate che hai inviato: ".$lat.",".$lon;
 			$content = array('chat_id' => $chat_id, 'text' => $location,'disable_web_page_preview'=>true);
 			$telegram->sendMessage($content);
 	//	echo "comune: ".$comune."\n</br>";
@@ -210,19 +213,23 @@ function location_manager($telegram,$user_id,$chat_id,$location)
 				$csv = array_map('str_getcsv', file($url));
 					$csv=str_replace(",",".",	$csv);
 				  $data="";
+					$c=0;
+					$distanza=[];
 					$count = 0;
 					foreach($csv as $data1=>$csv1){
 					   $count = $count+1;
 					}
 					echo $count;
+					/*
 if ($count >=50){
 	$location="Sono più di 30\nGli short links goo.gl vengono disabilitati per permettere una veloce risposta:";
 	$content = array('chat_id' => $chat_id, 'text' => $location,'disable_web_page_preview'=>true);
 	$telegram->sendMessage($content);
 sleep(3);
 }
+*/
 					for ($i=1;$i<$count;$i++){
-	if ($csv[$i][16] =="-"){
+						if ($csv[$i][16] =="-"){
 					$data .="\n";
 					$data .="Nome: ".$csv[$i][4]."\n";
 					$data .="Indirizzo: ".$csv[$i][3]."\n".$csv[$i][6]." ".$csv[$i][8]."\n";
@@ -236,7 +243,7 @@ sleep(3);
 					$latitudine =$lat1.".".$lat2;
 					$longitudine =$lon1.".".$lon2;
 
-
+/*
 					if ($csv[$i][19] !=NULL AND $count<31){
 						$theta = $lon-$longitudine;
 	  				$dist = sin(deg2rad($lat)) * sin(deg2rad($latitudine)) +  cos(deg2rad($lat)) * cos(deg2rad($latitudine)) * cos(deg2rad($theta));
@@ -274,35 +281,65 @@ sleep(3);
 					$shortLink = get_object_vars($json);
 					$data .="Mappa: ".$shortLink['id']."\n";
 			  	}
-					if ($csv[$i][19] !=NULL AND $count>=31){
+					*/
+
+					if ($csv[$i][19] !=NULL){
 						$theta = $lon-$longitudine;
 						$dist = sin(deg2rad($lat)) * sin(deg2rad($latitudine)) +  cos(deg2rad($lat)) * cos(deg2rad($latitudine)) * cos(deg2rad($theta));
 						$dist = acos($dist);
 						$dist = rad2deg($dist);
 						$miles = $dist * 60 * 1.1515 * 1.609344;
 						if ($miles >=1){
+
+							$distanza[$i]['dist']=number_format($miles, 2, '.', '');
+								$distanza[$i]['distm']="Distanza: ".number_format($miles, 2, '.', '')." Km\n";
 							$data .="Distanza: ".number_format($miles, 2, '.', '')." Km\n";
-						} else $data .="Distanza: ".number_format(($miles*1000), 0, '.', '')." mt\n";
+						} else {
+							$data .="Distanza: ".number_format(($miles*1000), 0, '.', '')." mt\n";
+							$distanza[$i]['dist']=number_format(($miles*1000), 0, '.', '');
+							$distanza[$i]['distm']="Distanza: ".number_format(($miles*1000), 0, '.', '')." mt\n";
 
-						$data .= "Guardalo sulla mappa:\nhttp://www.openstreetmap.org/?mlat=".$latitudine."&mlon=".$longitudine."#map=19/".$latitudine."/".$longitudine."\n\n";
+						}
 
- }
+
+						$longUrlG= "Guardalo sulla mappa:\nhttp://www.openstreetmap.org/?mlat=".$latitudine."&mlon=".$longitudine."#map=19/".$latitudine."/".$longitudine."\n\n";
+						$option1 = array( array( $telegram->buildInlineKeyboardButton("Mappa", $url=$longUrlG)));
+						$keyb = $telegram->buildInlineKeyBoard($option1);
+						$content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "Vai alla");
+						$telegram->sendMessage($content);
+						$c++;
+ 						}
+ $distanza[$i]['nome']="Nome: ".$csv[$i][4]."\n";
+ $distanza[$i]['indirizzo']="Indirizzo: ".$csv[$i][3]."\n".$csv[$i][6]." ".$csv[$i][8]."\n";
+
 		    	}
 
 			//	echo $alert;
 }
+				sort($distanza);
+				$data="";
+				for ($i=0;$i<$c;$i++){
+					$data .="\n";
+						$data .=$distanza[$i]['nome'];
+						$data .=$distanza[$i]['indirizzo'];
+						$data .=$distanza[$i]['distm'];
+				}
 				$chunks = str_split($data, self::MAX_LENGTH);
 				foreach($chunks as $chunk) {
-		$forcehide=$telegram->buildForceReply(true);
-			$content = array('chat_id' => $chat_id, 'text' => $chunk,'disable_web_page_preview'=>true);
+				$forcehide=$telegram->buildForceReply(true);
+				$content = array('chat_id' => $chat_id, 'text' => $chunk,'disable_web_page_preview'=>true);
 
 					$telegram->sendMessage($content);
 
 				}
-$reply="Puoi visualizzare le farmacie attorno a te visitando: http://www.piersoft.it/FarmacieBot/mappa/locator.php?lat=".$lat."&lon=".$lon."&r=2";
-				$content = array('chat_id' => $chat_id, 'text' => $reply,'disable_web_page_preview'=>true);
-					$telegram->sendMessage($content);
-				$content = array('chat_id' => $chat_id, 'text' => "Digita un Comune oppure invia la tua posizione tramite la graffetta (📎)");
+
+				$mappa="http://www.piersoft.it/FarmacieBot/mappa/locator.php?lat=".$lat."&lon=".$lon."&r=4";
+				$reply="Puoi visualizzare le farmacie nei 4km attorno a te, visitando la";
+				$option = array( array( $telegram->buildInlineKeyboardButton("Mappa", $url=$mappa)));
+				$keyb = $telegram->buildInlineKeyBoard($option);
+				$content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => $reply);
+				$telegram->sendMessage($content);
+				$content = array('chat_id' => $chat_id, 'text' => "Digita un Comune oppure invia la tua posizione tramite la graffetta (📎). Per info /start");
 					$telegram->sendMessage($content);
 
 	}
